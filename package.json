@@ -1,0 +1,48 @@
+{
+  "name": "bit-string-mask",
+  "version": "0.0.0",
+  "description": "Mask a string using bits from an input number",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\" --type-check --project tsconfig.json",
+    "build": "rimraf dist && tsc",
+    "specs": "jest --coverage",
+    "test": "npm run -s lint && npm run -s build && npm run -s specs",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/node-bit-string-mask.git"
+  },
+  "keywords": [
+    "bit",
+    "binary",
+    "mask",
+    "case",
+    "string",
+    "ascii"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/node-bit-string-mask/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/node-bit-string-mask",
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "@types/node": "^7.0.13",
+    "jest": "^19.0.0",
+    "rimraf": "^2.5.4",
+    "tslint": "^5.0.0",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.2.1"
+  }
+}
