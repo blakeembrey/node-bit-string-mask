@@ -1,6 +1,6 @@
 {
   "name": "bit-string-mask",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mask a string using bits from an input number",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
