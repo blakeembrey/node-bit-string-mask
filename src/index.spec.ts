@@ -8,10 +8,9 @@ describe('bit-string-mask', () => {
     expect(mask('test', 3)).toEqual('TEst')
     expect(mask('test', 1000)).toEqual('tesT')
 
-    // Show that all lowercase input works best (no conflicts).
-    expect(mask('A-Test', 0)).toEqual('a-Test')
-    expect(mask('A-Test', 1)).toEqual('A-Test')
-    expect(mask('A-Test', 2)).toEqual('a-Test')
-    expect(mask('A-Test', 3)).toEqual('A-Test')
+    expect(mask('A-Test', 0)).toEqual('A-Test')
+    expect(mask('A-Test', 1)).toEqual('a-Test')
+    expect(mask('A-Test', 2)).toEqual('A-test')
+    expect(mask('A-Test', 3)).toEqual('a-test')
   })
 })
